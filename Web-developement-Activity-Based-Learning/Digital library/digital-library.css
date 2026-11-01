@@ -1,0 +1,282 @@
+
+/* Basic Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #18392b;
+    padding: 18px 7%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar ul a:hover {
+    color: #b8e0c5;
+}
+
+.nav-btn {
+    background-color: #e4b86a;
+    color: #18392b !important;
+    padding: 10px 16px;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e9f2e9;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #2c704b;
+}
+
+.hero p {
+    color: #5d6c62;
+    margin-bottom: 25px;
+}
+
+/* Search Bar */
+.search-box {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    margin: auto;
+}
+
+.search-box input {
+    width: 100%;
+    min-width: 0;
+    padding: 13px;
+    border: 1px solid #cbd5d0;
+    border-radius: 6px 0 0 6px;
+    font-size: 15px;
+}
+
+.search-box button {
+    padding: 13px 20px;
+    border: none;
+    background-color: #2c704b;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 6px 6px 0;
+}
+
+.search-box button:hover {
+    background-color: #18392b;
+}
+
+/* General Sections */
+.section {
+    padding: 60px 7%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #718078;
+    margin-bottom: 30px;
+}
+
+/* Categories */
+.category-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.category {
+    background-color: #ffffff;
+    padding: 16px 22px;
+    border: 1px solid #dce5df;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #18392b;
+}
+
+.category:hover {
+    background-color: #e9f2e9;
+}
+
+/* Book Cards */
+.books-section {
+    background-color: #f0f4f1;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.book-card {
+    width: 230px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px #00000010;
+    text-align: left;
+}
+
+.book-cover {
+    height: 220px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 4px;
+}
+
+.cover-one {
+    background-color: #8b4c39;
+    border-left: 8px solid #663426;
+}
+
+.cover-two {
+    background-color: #355c7d;
+    border-left: 8px solid #24415b;
+}
+
+.cover-three {
+    background-color: #52745b;
+    border-left: 8px solid #36503e;
+}
+
+.cover-four {
+    background-color: #8c6b36;
+    border-left: 8px solid #60471f;
+}
+
+.book-info {
+    padding: 5px 18px 22px;
+}
+
+.book-info h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.book-info p {
+    color: #718078;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.book-info .category-label {
+    color: #2c704b;
+    font-weight: bold;
+}
+
+.read-btn {
+    display: inline-block;
+    background-color: #2c704b;
+    color: white;
+    padding: 9px 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.read-btn:hover {
+    background-color: #18392b;
+}
+
+/* About Section */
+.about p {
+    max-width: 750px;
+    margin: 15px auto;
+    color: #5d6c62;
+}
+
+/* Footer */
+footer {
+    background-color: #18392b;
+    color: white;
+    text-align: center;
+    padding: 28px 15px;
+}
+
+footer h2 {
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .section {
+        padding: 40px 5%;
+    }
+
+    .book-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .search-box input {
+        font-size: 14px;
+    }
+}

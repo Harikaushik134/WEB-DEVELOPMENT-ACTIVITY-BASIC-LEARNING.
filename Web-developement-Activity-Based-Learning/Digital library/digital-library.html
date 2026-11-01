@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookNest - Digital Library</title>
+    <link rel="stylesheet" href="digital-library.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">BookNest</h2>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#books">Books</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+
+            <a href="#books" class="nav-btn">Explore Books</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Discover Your Next <span>Favorite Book</span></h1>
+
+        <p>
+            Explore a world of knowledge, stories, and ideas
+            in your personal digital library.
+        </p>
+
+        <form class="search-box" action="#books" method="get">
+            <input type="search"
+                   name="book"
+                   placeholder="Search for books..."
+                   aria-label="Search for books">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="section">
+        <h2>Browse Categories</h2>
+        <p class="subtitle">Find books based on your interests.</p>
+
+        <div class="category-container">
+            <a href="#fiction" class="category">📖 Fiction</a>
+            <a href="#technology" class="category">💻 Technology</a>
+            <a href="#science" class="category">🔬 Science</a>
+            <a href="#business" class="category">📈 Business</a>
+        </div>
+    </section>
+
+    <!-- Featured Books -->
+    <section id="books" class="section books-section">
+        <h2>Featured Books</h2>
+        <p class="subtitle">Explore our popular reading collection.</p>
+
+        <div class="book-container">
+
+            <div class="book-card" id="fiction">
+                <div class="book-cover cover-one">
+                    <span>THE<br>GREAT<br>ADVENTURE</span>
+                </div>
+
+                <div class="book-info">
+                    <h3>The Great Adventure</h3>
+                    <p>Author: Alex Morgan</p>
+                    <p class="category-label">Fiction</p>
+                    <a href="#about" class="read-btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="book-card" id="technology">
+                <div class="book-cover cover-two">
+                    <span>LEARN<br>TECHNOLOGY</span>
+                </div>
+
+                <div class="book-info">
+                    <h3>Learn Technology</h3>
+                    <p>Author: Sam Wilson</p>
+                    <p class="category-label">Technology</p>
+                    <a href="#about" class="read-btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="book-card" id="science">
+                <div class="book-cover cover-three">
+                    <span>WORLD<br>OF SCIENCE</span>
+                </div>
+
+                <div class="book-info">
+                    <h3>World of Science</h3>
+                    <p>Author: Jamie Lee</p>
+                    <p class="category-label">Science</p>
+                    <a href="#about" class="read-btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="book-card" id="business">
+                <div class="book-cover cover-four">
+                    <span>SMART<br>BUSINESS</span>
+                </div>
+
+                <div class="book-info">
+                    <h3>Smart Business</h3>
+                    <p>Author: Taylor Reed</p>
+                    <p class="category-label">Business</p>
+                    <a href="#about" class="read-btn">Read More</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About Our Digital Library</h2>
+
+        <p>
+            BookNest is a digital library website concept that helps
+            readers explore books and discover new topics. It provides
+            a simple, organized space to browse different categories
+            and find your next read.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>BookNest</h2>
+        <p>Your world of books, all in one place.</p>
+        <p>&copy; 2026 BookNest. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
