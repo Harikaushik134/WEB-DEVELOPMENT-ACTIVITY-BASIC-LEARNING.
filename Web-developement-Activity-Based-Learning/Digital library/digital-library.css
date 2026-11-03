@@ -1,5 +1,5 @@
 
-/* Basic Setup */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation Bar */
+
 header {
     background-color: #18392b;
     padding: 18px 7%;
@@ -56,7 +56,7 @@ header {
     border-radius: 5px;
 }
 
-/* Hero Section */
+
 .hero {
     background-color: #e9f2e9;
     text-align: center;
@@ -77,7 +77,7 @@ header {
     margin-bottom: 25px;
 }
 
-/* Search Bar */
+
 .search-box {
     display: flex;
     justify-content: center;
@@ -107,7 +107,7 @@ header {
     background-color: #18392b;
 }
 
-/* General Sections */
+
 .section {
     padding: 60px 7%;
     text-align: center;
@@ -123,7 +123,7 @@ header {
     margin-bottom: 30px;
 }
 
-/* Categories */
+
 .category-container {
     display: flex;
     justify-content: center;
@@ -144,7 +144,7 @@ header {
     background-color: #e9f2e9;
 }
 
-/* Book Cards */
+
 .books-section {
     background-color: #f0f4f1;
 }
@@ -233,14 +233,13 @@ header {
     background-color: #18392b;
 }
 
-/* About Section */
 .about p {
     max-width: 750px;
     margin: 15px auto;
     color: #5d6c62;
 }
 
-/* Footer */
+
 footer {
     background-color: #18392b;
     color: white;
@@ -252,7 +251,7 @@ footer h2 {
     margin-bottom: 8px;
 }
 
-/* Responsive Design */
+
 @media (max-width: 650px) {
     .navbar {
         flex-direction: column;
